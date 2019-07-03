@@ -1,0 +1,821 @@
+sklearn: 0.19.1
+xgboost: 0.81
+pandas: 0.23.1
+numpy: 1.14.5
+scipy: 1.0.1
+matplotlib: 2.2.4
+Counter({2: 779, 3: 578, 1: 345, 4: 131})
+6 0.8 1 0.05
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 5.235 STD_test: 0.350
+RMSE_train: 3.008 STD_train: 0.030
+Data size:(1833, 69)
+(1650, 69) (1650,)
+RMSE(Train): 3.041
+RMSE(Test): 5.376
+6 0.9 0.8 0.1
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.9)
+RMSE_test: 4.228 STD_test: 0.244
+RMSE_train: 0.971 STD_train: 0.021
+Data size:(1833, 104)
+(1649, 104) (1649,)
+RMSE(Train): 0.954
+RMSE(Test): 4.050
+8 0.8 0.8 0.05
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=8, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 4.186 STD_test: 0.282
+RMSE_train: 0.533 STD_train: 0.021
+Data size:(1833, 148)
+(1649, 148) (1649,)
+RMSE(Train): 0.531
+RMSE(Test): 4.142
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 6.575 STD_test: 0.310
+RMSE_train: 6.527 STD_train: 0.034
+Data size:(1833, 148)
+(1650, 148) (1650,)
+RMSE(Train): 6.532
+RMSE(Test): 6.543
+Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 6.209 STD_test: 0.538
+RMSE_train: 5.363 STD_train: 0.049
+Data size:(1833, 148)
+(1650, 148) (1650,)
+RMSE(Train): 5.316
+RMSE(Test): 6.315
+KernelRidge(alpha=0.1, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 9.841 STD_test: 0.449
+RMSE_train: 1.796 STD_train: 0.029
+Data size:(1833, 148)
+(1650, 148) (1650,)
+RMSE(Train): 1.821
+RMSE(Test): 9.784
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=1.0, gamma=0.0001,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 6.112 STD_test: 0.275
+RMSE_train: 2.119 STD_train: 0.052
+Data size:(1833, 148)
+(1650, 148) (1650,)
+RMSE(Train): 2.173
+RMSE(Test): 6.118
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.377 STD_test: 0.279
+RMSE_train: 1.623 STD_train: 0.015
+Data size:(1833, 148)
+(1649, 148) (1649,)
+RMSE(Train): 1.633
+RMSE(Test): 4.298
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.332 STD_test: 0.295
+RMSE_train: 0.163 STD_train: 0.018
+Data size:(1833, 148)
+(1650, 148) (1650,)
+RMSE(Train): 0.173
+RMSE(Test): 4.347
+2.30
+I     1
+Ar    1
+Au    1
+Ga    1
+In    2
+Te    2
+Rh    2
+Pd    2
+Lu    2
+Sc    2
+Ru    2
+Be    3
+Re    3
+Cd    3
+Cr    3
+Ge    3
+N     4
+Tm    4
+Pt    4
+Ho    6
+Er    6
+Dy    8
+Cu    8
+Tb    9
+dtype: int64
+Lasso(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 6.371 STD_test: 0.405
+RMSE_train: 6.227 STD_train: 0.051
+Data size:(1833, 69)
+
+[Lasso] RMSE 6.371 (STD: 0.405) ... test
+[Lasso] RMSE 6.227 (STD: 0.051) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 6.359 STD_test: 0.425
+RMSE_train: 6.094 STD_train: 0.052
+Data size:(1833, 69)
+
+[Ridge] RMSE 6.359 (STD: 0.425) ... test
+[Ridge] RMSE 6.094 (STD: 0.052) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 6.327 STD_test: 0.413
+RMSE_train: 6.208 STD_train: 0.048
+Data size:(1833, 69)
+
+[KRR] RMSE 6.327 (STD: 0.413) ... test
+[KRR] RMSE 6.208 (STD: 0.048) ... train
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=1.0, gamma=1.0,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 5.985 STD_test: 0.304
+RMSE_train: 2.651 STD_train: 0.040
+Data size:(1833, 69)
+
+[SVR] RMSE 5.985 (STD: 0.304) ... test
+[SVR] RMSE 2.651 (STD: 0.040) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 5.328 STD_test: 0.372
+RMSE_train: 2.542 STD_train: 0.022
+Data size:(1833, 69)
+
+[RFR] RMSE 5.328 (STD: 0.372) ... test
+[RFR] RMSE 2.542 (STD: 0.022) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 5.481 STD_test: 0.385
+RMSE_train: 1.851 STD_train: 0.034
+Data size:(1833, 69)
+
+[ETR] RMSE 5.481 (STD: 0.385) ... test
+[ETR] RMSE 1.851 (STD: 0.034) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 5.235 STD_test: 0.350
+RMSE_train: 3.008 STD_train: 0.030
+Data size:(1833, 69)
+
+[XGB] RMSE 5.235 (STD: 0.350) ... test
+[XGB] RMSE 3.008 (STD: 0.030) ... train
+Lasso(alpha=10.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 6.574 STD_test: 0.327
+RMSE_train: 6.546 STD_train: 0.033
+Data size:(1833, 104)
+
+[Lasso] RMSE 6.574 (STD: 0.327) ... test
+[Lasso] RMSE 6.546 (STD: 0.033) ... train
+Ridge(alpha=0.01, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 6.641 STD_test: 0.823
+RMSE_train: 5.561 STD_train: 0.049
+Data size:(1833, 104)
+
+[Ridge] RMSE 6.641 (STD: 0.823) ... test
+[Ridge] RMSE 5.561 (STD: 0.049) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 6.108 STD_test: 0.379
+RMSE_train: 5.946 STD_train: 0.043
+Data size:(1833, 104)
+
+[KRR] RMSE 6.108 (STD: 0.379) ... test
+[KRR] RMSE 5.946 (STD: 0.043) ... train
+SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=1.0, gamma=0.001,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 6.064 STD_test: 0.406
+RMSE_train: 5.550 STD_train: 0.045
+Data size:(1833, 104)
+
+[SVR] RMSE 6.064 (STD: 0.406) ... test
+[SVR] RMSE 5.550 (STD: 0.045) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.415 STD_test: 0.339
+RMSE_train: 1.650 STD_train: 0.015
+Data size:(1833, 104)
+
+[RFR] RMSE 4.415 (STD: 0.339) ... test
+[RFR] RMSE 1.650 (STD: 0.015) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.324 STD_test: 0.266
+RMSE_train: 0.163 STD_train: 0.018
+Data size:(1833, 104)
+
+[ETR] RMSE 4.324 (STD: 0.266) ... test
+[ETR] RMSE 0.163 (STD: 0.018) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.1, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.9)
+RMSE_test: 4.228 STD_test: 0.244
+RMSE_train: 0.971 STD_train: 0.021
+Data size:(1833, 104)
+
+[XGB] RMSE 4.228 (STD: 0.244) ... test
+[XGB] RMSE 0.971 (STD: 0.021) ... train
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 6.564 STD_test: 0.326
+RMSE_train: 6.527 STD_train: 0.037
+Data size:(1833, 148)
+
+[Lasso] RMSE 6.564 (STD: 0.326) ... test
+[Lasso] RMSE 6.527 (STD: 0.037) ... train
+Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 6.329 STD_test: 0.603
+RMSE_train: 5.363 STD_train: 0.057
+Data size:(1833, 148)
+
+[Ridge] RMSE 6.329 (STD: 0.603) ... test
+[Ridge] RMSE 5.363 (STD: 0.057) ... train
+KernelRidge(alpha=0.1, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 9.828 STD_test: 0.543
+RMSE_train: 1.798 STD_train: 0.032
+Data size:(1833, 148)
+
+[KRR] RMSE 9.828 (STD: 0.543) ... test
+[KRR] RMSE 1.798 (STD: 0.032) ... train
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=1.0, gamma=0.0001,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 6.125 STD_test: 0.257
+RMSE_train: 2.120 STD_train: 0.033
+Data size:(1833, 148)
+
+[SVR] RMSE 6.125 (STD: 0.257) ... test
+[SVR] RMSE 2.120 (STD: 0.033) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.365 STD_test: 0.365
+RMSE_train: 1.625 STD_train: 0.017
+Data size:(1833, 148)
+
+[RFR] RMSE 4.365 (STD: 0.365) ... test
+[RFR] RMSE 1.625 (STD: 0.017) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 4.274 STD_test: 0.407
+RMSE_train: 0.157 STD_train: 0.021
+Data size:(1833, 148)
+
+[ETR] RMSE 4.274 (STD: 0.407) ... test
+[ETR] RMSE 0.157 (STD: 0.021) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=8, min_child_weight=1, missing=None, n_estimators=500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 4.149 STD_test: 0.403
+RMSE_train: 0.525 STD_train: 0.021
+Data size:(1833, 148)
+
+[XGB] RMSE 4.149 (STD: 0.403) ... test
+[XGB] RMSE 0.525 (STD: 0.021) ... train
+          Lasso  Ridge   KRR   SVR   RFR   ETR   XGB
+tes_mean   6.37   6.36  6.33  5.98  5.33  5.48  5.23
+tes_sd     0.41   0.43  0.41  0.30  0.37  0.38  0.35
+trn_mean   6.23   6.09  6.21  2.65  2.54  1.85  3.01
+trn_sd     0.05   0.05  0.05  0.04  0.02  0.03  0.03
+          Lasso  Ridge   KRR   SVR   RFR   ETR   XGB
+tes_mean   6.57   6.64  6.11  6.06  4.41  4.32  4.23
+tes_sd     0.33   0.82  0.38  0.41  0.34  0.27  0.24
+trn_mean   6.55   5.56  5.95  5.55  1.65  0.16  0.97
+trn_sd     0.03   0.05  0.04  0.04  0.02  0.02  0.02
+          Lasso  Ridge   KRR   SVR   RFR   ETR   XGB
+tes_mean   6.56   6.33  9.83  6.12  4.36  4.27  4.15
+tes_sd     0.33   0.60  0.54  0.26  0.37  0.41  0.40
+trn_mean   6.53   5.36  1.80  2.12  1.62  0.16  0.52
+trn_sd     0.04   0.06  0.03  0.03  0.02  0.02  0.02
+6 0.8 1 0.05
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 8.283 STD_test: 0.807
+RMSE_train: 2.408 STD_train: 0.032
+Data size:(4185, 134)
+(3766, 134) (3766,)
+RMSE(Train): 2.502
+RMSE(Test): 7.885
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 32.680 STD_test: 0.435
+RMSE_train: 32.667 STD_train: 0.048
+Data size:(4185, 35)
+
+[Lasso] RMSE 32.680 (STD: 0.435) ... test
+[Lasso] RMSE 32.667 (STD: 0.048) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 32.312 STD_test: 0.493
+RMSE_train: 32.065 STD_train: 0.054
+Data size:(4185, 35)
+
+[Ridge] RMSE 32.312 (STD: 0.493) ... test
+[Ridge] RMSE 32.065 (STD: 0.054) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 32.582 STD_test: 0.461
+RMSE_train: 32.554 STD_train: 0.053
+Data size:(4185, 35)
+
+[KRR] RMSE 32.582 (STD: 0.461) ... test
+[KRR] RMSE 32.554 (STD: 0.053) ... train
+SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=1e-10,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 32.965 STD_test: 0.643
+RMSE_train: 32.937 STD_train: 0.046
+Data size:(4185, 35)
+
+[SVR] RMSE 32.965 (STD: 0.643) ... test
+[SVR] RMSE 32.937 (STD: 0.046) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 31.149 STD_test: 0.645
+RMSE_train: 29.620 STD_train: 0.067
+Data size:(4185, 35)
+
+[RFR] RMSE 31.149 (STD: 0.645) ... test
+[RFR] RMSE 29.620 (STD: 0.067) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 31.172 STD_test: 0.640
+RMSE_train: 29.613 STD_train: 0.067
+Data size:(4185, 35)
+
+[ETR] RMSE 31.172 (STD: 0.640) ... test
+[ETR] RMSE 29.613 (STD: 0.067) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.9, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=1)
+RMSE_test: 31.170 STD_test: 0.649
+RMSE_train: 29.615 STD_train: 0.067
+Data size:(4185, 35)
+
+[XGB] RMSE 31.170 (STD: 0.649) ... test
+[XGB] RMSE 29.615 (STD: 0.067) ... train
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 28.395 STD_test: 0.462
+RMSE_train: 28.363 STD_train: 0.078
+Data size:(4185, 79)
+
+[Lasso] RMSE 28.395 (STD: 0.462) ... test
+[Lasso] RMSE 28.363 (STD: 0.078) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 24.490 STD_test: 0.598
+RMSE_train: 24.179 STD_train: 0.070
+Data size:(4185, 79)
+
+[Ridge] RMSE 24.490 (STD: 0.598) ... test
+[Ridge] RMSE 24.179 (STD: 0.070) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 25.075 STD_test: 0.525
+RMSE_train: 24.722 STD_train: 0.053
+Data size:(4185, 79)
+
+[KRR] RMSE 25.075 (STD: 0.525) ... test
+[KRR] RMSE 24.722 (STD: 0.053) ... train
+SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=1e-05,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 26.997 STD_test: 0.488
+RMSE_train: 26.899 STD_train: 0.050
+Data size:(4185, 79)
+
+[SVR] RMSE 26.997 (STD: 0.488) ... test
+[SVR] RMSE 26.899 (STD: 0.050) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 11.483 STD_test: 0.910
+RMSE_train: 4.244 STD_train: 0.039
+Data size:(4185, 79)
+
+[RFR] RMSE 11.483 (STD: 0.910) ... test
+[RFR] RMSE 4.244 (STD: 0.039) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 10.453 STD_test: 0.791
+RMSE_train: 0.005 STD_train: 0.001
+Data size:(4185, 79)
+
+[ETR] RMSE 10.453 (STD: 0.791) ... test
+[ETR] RMSE 0.005 (STD: 0.001) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.9, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 8.330 STD_test: 0.600
+RMSE_train: 2.953 STD_train: 0.054
+Data size:(4185, 79)
+
+[XGB] RMSE 8.330 (STD: 0.600) ... test
+[XGB] RMSE 2.953 (STD: 0.054) ... train
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 27.821 STD_test: 0.736
+RMSE_train: 27.714 STD_train: 0.087
+Data size:(4185, 134)
+
+[Lasso] RMSE 27.821 (STD: 0.736) ... test
+[Lasso] RMSE 27.714 (STD: 0.087) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 24.444 STD_test: 0.779
+RMSE_train: 24.063 STD_train: 0.095
+Data size:(4185, 134)
+
+[Ridge] RMSE 24.444 (STD: 0.779) ... test
+[Ridge] RMSE 24.063 (STD: 0.095) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 21.936 STD_test: 0.838
+RMSE_train: 19.326 STD_train: 0.064
+Data size:(4185, 134)
+
+[KRR] RMSE 21.936 (STD: 0.838) ... test
+[KRR] RMSE 19.326 (STD: 0.064) ... train
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=1e-05,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 23.949 STD_test: 0.517
+RMSE_train: 21.985 STD_train: 0.064
+Data size:(4185, 134)
+
+[SVR] RMSE 23.949 (STD: 0.517) ... test
+[SVR] RMSE 21.985 (STD: 0.064) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 11.390 STD_test: 0.766
+RMSE_train: 4.109 STD_train: 0.055
+Data size:(4185, 134)
+
+[RFR] RMSE 11.390 (STD: 0.766) ... test
+[RFR] RMSE 4.109 (STD: 0.055) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 10.115 STD_test: 0.983
+RMSE_train: 0.006 STD_train: 0.002
+Data size:(4185, 134)
+
+[ETR] RMSE 10.115 (STD: 0.983) ... test
+[ETR] RMSE 0.006 (STD: 0.002) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 8.283 STD_test: 0.807
+RMSE_train: 2.408 STD_train: 0.032
+Data size:(4185, 134)
+
+[XGB] RMSE 8.283 (STD: 0.807) ... test
+[XGB] RMSE 2.408 (STD: 0.032) ... train
+          Lasso  Ridge    KRR    SVR    RFR    ETR    XGB
+tes_mean  32.68  32.31  32.58  32.97  31.15  31.17  31.17
+tes_sd     0.43   0.49   0.46   0.64   0.65   0.64   0.65
+trn_mean  32.67  32.07  32.55  32.94  29.62  29.61  29.61
+trn_sd     0.05   0.05   0.05   0.05   0.07   0.07   0.07
+          Lasso  Ridge    KRR    SVR    RFR       ETR   XGB
+tes_mean  28.39  24.49  25.08  27.00  11.48  1.05e+01  8.33
+tes_sd     0.46   0.60   0.52   0.49   0.91  7.91e-01  0.60
+trn_mean  28.36  24.18  24.72  26.90   4.24  5.40e-03  2.95
+trn_sd     0.08   0.07   0.05   0.05   0.04  1.23e-03  0.05
+          Lasso  Ridge    KRR    SVR    RFR       ETR   XGB
+tes_mean  27.82  24.44  21.94  23.95  11.39  1.01e+01  8.28
+tes_sd     0.74   0.78   0.84   0.52   0.77  9.83e-01  0.81
+trn_mean  27.71  24.06  19.33  21.98   4.11  6.16e-03  2.41
+trn_sd     0.09   0.09   0.06   0.06   0.06  2.08e-03  0.03
+7 0.8 1 0.05
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=7, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 12.055 STD_test: 0.550
+RMSE_train: 2.658 STD_train: 0.060
+Data size:(5567, 115)
+(5011, 115) (5011,)
+RMSE(Train): 2.688
+RMSE(Test): 12.351
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 35.102 STD_test: 0.585
+RMSE_train: 35.097 STD_train: 0.065
+Data size:(5567, 26)
+
+[Lasso] RMSE 35.102 (STD: 0.585) ... test
+[Lasso] RMSE 35.097 (STD: 0.065) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 34.050 STD_test: 0.460
+RMSE_train: 33.915 STD_train: 0.051
+Data size:(5567, 26)
+
+[Ridge] RMSE 34.050 (STD: 0.460) ... test
+[Ridge] RMSE 33.915 (STD: 0.051) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 34.915 STD_test: 0.570
+RMSE_train: 34.899 STD_train: 0.061
+Data size:(5567, 26)
+
+[KRR] RMSE 34.915 (STD: 0.570) ... test
+[KRR] RMSE 34.899 (STD: 0.061) ... train
+SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=1.0,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 32.577 STD_test: 0.577
+RMSE_train: 32.222 STD_train: 0.070
+Data size:(5567, 26)
+
+[SVR] RMSE 32.577 (STD: 0.577) ... test
+[SVR] RMSE 32.222 (STD: 0.070) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 30.328 STD_test: 0.857
+RMSE_train: 29.327 STD_train: 0.088
+Data size:(5567, 26)
+
+[RFR] RMSE 30.328 (STD: 0.857) ... test
+[RFR] RMSE 29.327 (STD: 0.088) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 30.358 STD_test: 0.868
+RMSE_train: 29.321 STD_train: 0.088
+Data size:(5567, 26)
+
+[ETR] RMSE 30.358 (STD: 0.868) ... test
+[ETR] RMSE 29.321 (STD: 0.088) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=6, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 30.368 STD_test: 0.852
+RMSE_train: 29.362 STD_train: 0.088
+Data size:(5567, 26)
+
+[XGB] RMSE 30.368 (STD: 0.852) ... test
+[XGB] RMSE 29.362 (STD: 0.088) ... train
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 33.765 STD_test: 0.412
+RMSE_train: 33.732 STD_train: 0.045
+Data size:(5567, 60)
+
+[Lasso] RMSE 33.765 (STD: 0.412) ... test
+[Lasso] RMSE 33.732 (STD: 0.045) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 31.192 STD_test: 0.541
+RMSE_train: 30.957 STD_train: 0.061
+Data size:(5567, 60)
+
+[Ridge] RMSE 31.192 (STD: 0.541) ... test
+[Ridge] RMSE 30.957 (STD: 0.061) ... train
+KernelRidge(alpha=1.0, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 28.195 STD_test: 0.458
+RMSE_train: 27.650 STD_train: 0.051
+Data size:(5567, 60)
+
+[KRR] RMSE 28.195 (STD: 0.458) ... test
+[KRR] RMSE 27.650 (STD: 0.051) ... train
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=0.0001,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 26.115 STD_test: 0.703
+RMSE_train: 25.188 STD_train: 0.082
+Data size:(5567, 60)
+
+[SVR] RMSE 26.115 (STD: 0.703) ... test
+[SVR] RMSE 25.188 (STD: 0.082) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 14.302 STD_test: 0.844
+RMSE_train: 5.235 STD_train: 0.038
+Data size:(5567, 60)
+
+[RFR] RMSE 14.302 (STD: 0.844) ... test
+[RFR] RMSE 5.235 (STD: 0.038) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 12.581 STD_test: 0.691
+RMSE_train: 0.022 STD_train: 0.014
+Data size:(5567, 60)
+
+[ETR] RMSE 12.581 (STD: 0.691) ... test
+[ETR] RMSE 0.022 (STD: 0.014) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=0.8, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=8, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 12.122 STD_test: 0.666
+RMSE_train: 2.649 STD_train: 0.093
+Data size:(5567, 60)
+
+[XGB] RMSE 12.122 (STD: 0.666) ... test
+[XGB] RMSE 2.649 (STD: 0.093) ... train
+Lasso(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=929,
+   selection='cyclic', tol=0.0001, warm_start=False)
+RMSE_test: 33.123 STD_test: 0.671
+RMSE_train: 33.069 STD_train: 0.081
+Data size:(5567, 115)
+
+[Lasso] RMSE 33.123 (STD: 0.671) ... test
+[Lasso] RMSE 33.069 (STD: 0.081) ... train
+Ridge(alpha=100.0, copy_X=True, fit_intercept=True, max_iter=None,
+   normalize=False, random_state=929, solver='auto', tol=0.001)
+RMSE_test: 30.703 STD_test: 0.650
+RMSE_train: 30.379 STD_train: 0.074
+Data size:(5567, 115)
+
+[Ridge] RMSE 30.703 (STD: 0.650) ... test
+[Ridge] RMSE 30.379 (STD: 0.074) ... train
+KernelRidge(alpha=0.1, coef0=1, degree=3, gamma=1e-05, kernel='rbf',
+      kernel_params=None)
+RMSE_test: 20.400 STD_test: 0.691
+RMSE_train: 18.108 STD_train: 0.070
+Data size:(5567, 115)
+
+[KRR] RMSE 20.400 (STD: 0.691) ... test
+[KRR] RMSE 18.108 (STD: 0.070) ... train
+SVR(C=10.0, cache_size=200, coef0=0.0, degree=3, epsilon=10.0, gamma=0.0001,
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+RMSE_test: 22.192 STD_test: 0.590
+RMSE_train: 19.961 STD_train: 0.101
+Data size:(5567, 115)
+
+[SVR] RMSE 22.192 (STD: 0.590) ... test
+[SVR] RMSE 19.961 (STD: 0.101) ... train
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None,
+           min_impurity_decrease=0.0, min_impurity_split=None,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+           oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 13.711 STD_test: 0.590
+RMSE_train: 5.023 STD_train: 0.040
+Data size:(5567, 115)
+
+[RFR] RMSE 13.711 (STD: 0.590) ... test
+[RFR] RMSE 5.023 (STD: 0.040) ... train
+ExtraTreesRegressor(bootstrap=False, criterion='mse', max_depth=None,
+          max_features='auto', max_leaf_nodes=None,
+          min_impurity_decrease=0.0, min_impurity_split=None,
+          min_samples_leaf=1, min_samples_split=2,
+          min_weight_fraction_leaf=0.0, n_estimators=1500, n_jobs=-1,
+          oob_score=False, random_state=929, verbose=0, warm_start=False)
+RMSE_test: 12.131 STD_test: 0.687
+RMSE_train: 0.019 STD_train: 0.010
+Data size:(5567, 115)
+
+[ETR] RMSE 12.131 (STD: 0.687) ... test
+[ETR] RMSE 0.019 (STD: 0.010) ... train
+XGBRegressor(base_score=0.5, booster='gbtree', colsample_bylevel=1,
+       colsample_bytree=1, gamma=0, learning_rate=0.05, max_delta_step=0,
+       max_depth=7, min_child_weight=1, missing=None, n_estimators=1500,
+       n_jobs=-1, nthread=None, objective='reg:linear', random_state=929,
+       reg_alpha=0, reg_lambda=1, scale_pos_weight=1, seed=929,
+       silent=True, subsample=0.8)
+RMSE_test: 12.055 STD_test: 0.550
+RMSE_train: 2.658 STD_train: 0.060
+Data size:(5567, 115)
+
+[XGB] RMSE 12.055 (STD: 0.550) ... test
+[XGB] RMSE 2.658 (STD: 0.060) ... train
+          Lasso  Ridge    KRR    SVR    RFR    ETR    XGB
+tes_mean  35.10  34.05  34.92  32.58  30.33  30.36  30.37
+tes_sd     0.59   0.46   0.57   0.58   0.86   0.87   0.85
+trn_mean  35.10  33.92  34.90  32.22  29.33  29.32  29.36
+trn_sd     0.06   0.05   0.06   0.07   0.09   0.09   0.09
+          Lasso  Ridge    KRR    SVR    RFR    ETR    XGB
+tes_mean  33.76  31.19  28.20  26.12  14.30  12.58  12.12
+tes_sd     0.41   0.54   0.46   0.70   0.84   0.69   0.67
+trn_mean  33.73  30.96  27.65  25.19   5.23   0.02   2.65
+trn_sd     0.05   0.06   0.05   0.08   0.04   0.01   0.09
+          Lasso  Ridge    KRR    SVR    RFR    ETR    XGB
+tes_mean  33.12  30.70  20.40  22.19  13.71  12.13  12.05
+tes_sd     0.67   0.65   0.69   0.59   0.59   0.69   0.55
+trn_mean  33.07  30.38  18.11  19.96   5.02   0.02   2.66
+trn_sd     0.08   0.07   0.07   0.10   0.04   0.01   0.06
