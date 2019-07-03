@@ -1,7 +1,7 @@
-Snapshots: ML scripts for reproducibility
+Machine Learning for Catalyst Design and Discovery
 ====
 
-Overview
+Snapshots: ML scripts for reproducibility
 
 ## Description
 
