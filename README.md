@@ -11,12 +11,12 @@ This is a set of scripts to generate results of our paper: Statistical Analysis 
 
 The results are based on the following versions of related libraries. To reproduce the same outputs, you need these versions on anaconda3-5.0.1.
 
-- sklearn: 0.21.0
-- xgboost: 0.82
-- pandas: 0.24.2
-- numpy: 1.16.3
-- scipy: 1.2.1
-- matplotlib: 3.0.3
+- sklearn: 0.19.1
+- xgboost: 0.81
+- pandas: 0.23.1
+- numpy: 1.14.5
+- scipy: 1.0.1
+- matplotlib: 2.2.4
 
 ## Licence
 
