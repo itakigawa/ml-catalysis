@@ -1,0 +1,4 @@
+/home/takigawa/.pyenv/versions/anaconda3-5.0.1/lib/python3.6/site-packages/sklearn/gaussian_process/gpr.py:457: UserWarning: fmin_l_bfgs_b terminated abnormally with the  state: {'grad': array([-3.26255459e-05]), 'task': b'ABNORMAL_TERMINATION_IN_LNSRCH', 'funcalls': 49, 'nit': 2, 'warnflag': 2}
+  " state: %s" % convergence_dict)
+smac_ocm.py:189: RuntimeWarning: divide by zero encountered in true_divide
+  Z = (mu - cur_max) / sigma
